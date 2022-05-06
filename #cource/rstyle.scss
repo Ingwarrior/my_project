@@ -1,0 +1,184 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*::before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	background-color: beige;
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+
+
+.wrraper {
+	height: 100%;
+	background-color: beige;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	&__conteiner {
+		box-shadow: 0 0 15px black;
+		background-color: white;
+		max-width: 1400px;
+		// шапка
+		.conteiner__title{
+			background-image: url(/images/haih.svg);
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: contain;
+			object-fit: cover;
+			border-bottom: 1px solid black;
+			display: flex;
+			align-items: center;
+			text-align: right;
+			.title__logo img{
+				margin: 10px;
+				object-fit: cover;
+			}
+			.title__text1 p{
+				font-size: 24px;
+				padding: 0px 10px;
+			}
+			.text1__input1 {
+				padding: 0px 10px;
+				font-size: 20px;
+				color: purple;
+				.input1__strelka1{
+					margin: 0px 10px;
+				}
+			}
+		}
+		// шапка конец
+		// тело начало
+		.conteiner__block1{
+			border-bottom: 1px solid black;
+			display: flex;
+			align-items: center;
+			text-align: left;
+			margin: 10px 0px;
+			.block1__logotip img{
+				margin: 10px;
+				object-fit: cover;
+			}
+			.block1__text2 p{
+				font-size: 24px;
+				padding: 0px 10px;
+			}
+			.text2__input2 {
+				padding: 0px 10px;
+				font-size: 20px;
+				color: purple;
+				.input2__strelka2{
+					margin: 0px 10px;
+				}
+			}
+		}
+		// тело конец
+		// подвал начало
+		.conteiner__footer{
+			background-image: url(/images/down.svg);
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-size: cover;
+			object-fit: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 77px 0px 0px 0px;
+			margin: 0px;
+			line-height: 200px;
+			.footer__text p{
+				font-size: 14px;
+				margin: 0px 50px;
+			}
+			.footer__logo1 img{
+				object-fit: cover;
+			}
+			.footer__navigation a{
+				margin: 0px 10px;
+			}
+		}
+		// подвал конец
+	}
+
+	
+}
+
+
+
+
+
