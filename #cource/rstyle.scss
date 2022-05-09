@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Quintessential&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -83,16 +83,20 @@ h6 {
 
 
 .wrraper {
-	height: 100%;
 	background-color: beige;
 	padding: 0px;
 	margin: 0px;
 	display: flex;
 	justify-content: center;
 	&__conteiner {
+		padding: 0px;
+		margin: 0px;
 		box-shadow: 0 0 15px black;
 		background-color: white;
 		max-width: 1400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		// шапка
 		.conteiner__title{
 			background-image: url(/images/haih.svg);
@@ -100,7 +104,6 @@ h6 {
 			background-position: top;
 			background-size: contain;
 			object-fit: cover;
-			border-bottom: 1px solid black;
 			display: flex;
 			align-items: center;
 			text-align: right;
@@ -120,11 +123,15 @@ h6 {
 					margin: 0px 10px;
 				}
 			}
+			.text1__input1 img:hover{
+				box-shadow: 0 0 15px black;
+				background-color: purple;
+				border-radius: 100%;
+			}
 		}
 		// шапка конец
 		// тело начало
 		.conteiner__block1{
-			border-bottom: 1px solid black;
 			display: flex;
 			align-items: center;
 			text-align: left;
@@ -145,7 +152,90 @@ h6 {
 					margin: 0px 10px;
 				}
 			}
+			.text2__input2 img:hover{
+				background-color: purple;
+				box-shadow: 0 0 15px black;
+				border-radius: 100%;
+			}
 		}
+		// Важная информация блок
+		.conteiner__wrapp{
+			max-width: 100%;
+			display: flex;
+			text-align: left;
+			align-items: center;
+			.wrapp__imgs img{
+				margin: 10px;
+				object-fit: cover;
+			}
+			.wrapp__texts p {
+				font-size: 16px;
+				padding: 0px 10px;
+			}
+			.wrapp__texts h2 {
+				font-size: 24px;
+				padding: 0px 10px;
+			}
+			.wrapp__texts a {
+				font-size: 24px;
+				padding: 0 10px;
+				color: purple;
+			}
+			
+		}
+		// важная информация конец
+		// две кнопки главной страницы
+		.conteiner__buttons{
+			max-width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0px;
+			margin: 0px;
+			.buttons__wrapss{
+				display: flex;
+				padding: 5px;
+				.wrapss__rules a{
+					display: inline-block;
+					font-size: 40px;
+					margin: 0 20px;
+					padding: 10px;
+					background-color: purple;
+					border-radius: 30px;
+					text-decoration: none;
+					color: white;
+					font-family: 'Oleo Script Swash Caps', cursive;
+					font-family: 'PT Sans', sans-serif;
+					font-family: 'Quintessential', cursive;
+				}
+				.wrapss__buy a{
+					display: inline-block;
+					font-size: 40px;
+					margin: 0 20px;
+					padding: 10px;
+					background-color: purple;
+					border-radius: 30px;
+					text-decoration: none;
+					color: white;
+					font-family: 'Oleo Script Swash Caps', cursive;
+					font-family: 'PT Sans', sans-serif;
+					font-family: 'Quintessential', cursive;
+				}
+				// стиль для кнопок
+				.wrapss__rules a:hover{
+					transition: 1s;
+					color: black;
+					box-shadow: 0 0 15px black;
+				}
+				.wrapss__buy a:hover{
+					transition: 1s;
+					color: black;
+					box-shadow: 0 0 15px black;
+				}
+			}
+		}
+		// две кнопки главной страницы конец
+	}
 		// тело конец
 		// подвал начало
 		.conteiner__footer{
@@ -158,7 +248,6 @@ h6 {
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-			padding: 77px 0px 0px 0px;
 			margin: 0px;
 			line-height: 200px;
 			.footer__text p{
@@ -171,9 +260,13 @@ h6 {
 			.footer__navigation a{
 				margin: 0px 10px;
 			}
+			.footer__navigation a:hover{
+				background-color: white;
+				border-radius: 100%;
+				box-shadow: 0 0 15px black;
+			}
 		}
 		// подвал конец
-	}
 
 	
 }
