@@ -88,6 +88,7 @@ h6 {
 	margin: 0px;
 	display: flex;
 	justify-content: center;
+	
 	&__conteiner {
 		padding: 0px;
 		margin: 0px;
@@ -111,6 +112,7 @@ h6 {
 				margin: 10px;
 				object-fit: cover;
 			}
+			
 			.title__text1 p{
 				font-size: 24px;
 				padding: 0px 10px;
@@ -128,7 +130,72 @@ h6 {
 				background-color: purple;
 				border-radius: 100%;
 			}
+			@media(max-width: 1300px) {
+				.title__text1 p {
+					font-size: 20px;
+				}
+				.title__logo img {
+					width: 200px;
+					height: 250px;
+				}
+				.input1__strelka1{
+					width: 20px;
+				}
+			}
+			@media(max-width: 1200px){
+				.title__logo img {
+					width: 150px;
+					height: 150px;
+				}
+				.title__text1 p{
+					margin: 20px 0px 0px 0px;
+					font-size: 18px;
+				}
+				.text1__input1{
+					font-size: 18px;
+				}
+			}
+			@media(max-width: 845px){
+				.title__logo img {
+					padding: 0px 0px 0px 0px;
+					width: 100px;
+					height: 100px;
+				}
+				.title__text1 p{
+					margin: 30px 0px 0px 0px;
+					font-size: 16px;
+				}
+				.text1__input1{
+					font-size: 16px;
+				}
+			}
+			@media(max-width: 700px){
+				.title__logo img{
+					width: 150px;
+					height: 150px;
+				}
+				.title__text1 p{
+					font-size: 18px;
+				}
+				.text1__input1{
+					font-size: 18px;
+				}
+			}
 		}
+		@media(max-width: 1200px){
+			.conteiner__title{
+				background-size: cover;
+			}
+		}
+		@media(max-width: 700px){
+			.conteiner__title{
+				background-size: contain;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+		
 		// шапка конец
 		// тело начало
 		.conteiner__block1{
@@ -157,10 +224,68 @@ h6 {
 				box-shadow: 0 0 15px black;
 				border-radius: 100%;
 			}
+			@media(max-width: 1300px){
+				.block1__logotip img{
+					width: 400px;
+					height: 250px;
+				}
+				.block1__text2 p {
+					font-size: 20px;
+				}
+				.input2__strelka2{
+					width: 20px;
+				}
+			}
+			@media(max-width: 1200px){
+				.block1__logotip img{
+					width: 350px;
+					height: 200px;
+				}
+				.block1__text2 p{
+					font-size: 16px;
+				}
+				.text2__input2{
+					font-size: 16px;
+				}
+			}
+			@media(max-width: 845px){
+				.block1__logotip img{
+					margin: 0px 0px 20px 0px;
+					width: 150px;
+					height: 100px;
+				}
+				.block1__text2 p{
+					margin: 20px auto;
+					font-size: 14px;
+				}
+				.text2__input2{
+					font-size: 14px;
+				}
+			}
+			@media(max-width: 700px){
+				.block1__logotip img {
+					width: 350px;
+					height: 250px;
+				}
+				.block1__text2 p{
+					font-size: 18px;
+				}
+				.text2__input2{
+					padding: 0px 0px 0px 30px;
+					font-size: 18px;
+				}
+			}
+		}
+		@media(max-width: 700px){
+			.conteiner__block1 {
+				display: flex;
+				flex-direction: column-reverse;
+				margin: 20px 0px;
+				text-align: center;
+			}
 		}
 		// Важная информация блок
 		.conteiner__wrapp{
-			max-width: 100%;
 			display: flex;
 			text-align: left;
 			align-items: center;
@@ -172,6 +297,7 @@ h6 {
 				font-size: 16px;
 				padding: 0px 10px;
 			}
+			
 			.wrapp__texts h2 {
 				font-size: 24px;
 				padding: 0px 10px;
@@ -181,7 +307,74 @@ h6 {
 				padding: 0 10px;
 				color: purple;
 			}
-			
+			@media(max-width: 1300px) {
+				.wrapp__imgs img {
+					width: 350px;
+					height: 300px;
+				}
+				.wrapp__texts p{
+					font-size: 14px;
+				}
+				.wrapp__texts h2 {
+					font-size: 20px;
+				}
+				.wrapp__texts a{
+					font-size: 20px;
+				}
+				.wrapp__texts img {
+					width: 14px;
+				}
+			}
+			@media(max-width: 1200px){
+				.wrapp__imgs img {
+					width: 300px;
+					height: 300px;
+				}
+				.wrapp__texts a{
+					font-size: 16px;
+				}
+			}
+			@media(max-width: 845px){
+				.wrapp__imgs img {
+					width: 200px;
+					height: 200px;
+				}
+				.wrapp__texts a{
+					font-size: 14px;
+					padding: 0px 0px 10px 0px;
+				}
+			}
+			@media(max-width: 700px){
+				.wrapp__imgs img{
+					width: 350px;
+					height: 250px;
+				}
+				.wrapp__texts p{
+					font-size: 18px;
+				}
+				.wrapp__texts h2{
+					font-size: 22px;
+					text-decoration: underline;
+				}
+				.wrapp__texts a{
+					font-size: 18px;
+				}
+			}
+		}
+		@media(max-width: 1200px){
+			.conteiner__wrapp p {
+				line-height: 15px;
+			}
+		}
+		@media(max-width: 700px){
+			.conteiner__wrapp {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+			.conteiner__wrapp p {
+				line-height: 20px;
+			}
 		}
 		// важная информация конец
 		// две кнопки главной страницы
@@ -232,10 +425,44 @@ h6 {
 					color: black;
 					box-shadow: 0 0 15px black;
 				}
+				@media(max-width: 1300px){
+					.wrapss__rules a{
+						font-size: 30px;
+					}
+					.wrapss__buy a{
+						font-size: 30px;
+					}
+				}
+				@media(max-width: 1200px){
+					.wrapss__rules a{
+						font-size: 20px;
+					}
+					.wrapss__buy a{
+						font-size: 20px;
+					}
+				}
+				@media(max-width: 845px){
+					.wrapss__rules a{
+						font-size: 14px;
+					}
+					.wrapss__buy a{
+						font-size: 14px;
+					}
+				}
+				@media(max-width: 700px){
+					.wrapss__rules a{
+						font-size: 18px;
+						text-align: center;
+					}
+					.wrapss__buy a{
+						text-align: center;
+						font-size: 18px;
+					}
+				}
 			}
 		}
 		// две кнопки главной страницы конец
-	}
+	
 		// тело конец
 		// подвал начало
 		.conteiner__footer{
@@ -265,10 +492,77 @@ h6 {
 				border-radius: 100%;
 				box-shadow: 0 0 15px black;
 			}
+			@media(max-width: 845px) {
+				.footer__logo1 img {
+					width: 100px;
+					height: 100px;
+				}
+				.footer__navigation a{
+					margin: 0px 5px;
+				}
+				.footer__text p{
+					font-size: 13px;
+					margin: 0px 25px;
+				}
+			}
+			@media(max-width: 700px){
+				.footer__logo1 img {
+					opacity: 0;
+					width: 0;
+					margin: 0;
+					padding: 0;
+				}
+				.footer__navigation a{
+					width: 100px;
+					margin: 0;
+					padding: 0;
+				}
+				.footer__navigation img{
+					margin: 5px;
+				}
+				.footer__text p{
+					text-align: left;
+					padding: 0;
+					margin: 5px 0px;
+				}
+			}
+		}
+		@media(max-width: 700px){
+			.conteiner__footer{
+				display: flex;
+				flex-direction: row;
+				line-height: 20px;
+				padding: 10px;
+			}
 		}
 		// подвал конец
-
-	
+		
+	}
+	@media(max-width: 1600px){
+		&__conteiner {
+			max-width: 1200px;
+		}
+	}
+	@media(max-width: 1300px){
+		&__conteiner {
+			max-width: 1100px;
+		}
+	}
+	@media(max-width: 1200px){
+		&__conteiner {
+			max-width: 1000px;
+		}
+	}
+	@media(max-width: 1100px){
+		&__conteiner {
+			max-width: 900px;
+		}
+	}
+	@media(max-width: 700px){
+		&__conteiner{
+			background-color: rgba(0, 0, 0, 0.319);
+		}
+	}
 }
 
 
