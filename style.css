@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Quintessential&display=swap");
+@import 'rstyle.scss';
+@import 'ruless.scss';
+@import 'subscript.css';
+@import 'rusrules.css';
+@import 'photokarts.css';
+
 * {
   padding: 0;
   margin: 0;
